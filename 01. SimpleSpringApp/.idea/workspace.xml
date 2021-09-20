@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a8623d6-e4d8-413a-8b17-0ba2b6df2e45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/text1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/text2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/text3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/text4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/text5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/files.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/files.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +52,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="JPA Structure" value="true" />
+        <entry key="JPA Structure" value="false" />
       </map>
     </option>
   </component>
@@ -57,6 +66,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="PostgreSQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/files" />
@@ -110,11 +120,23 @@
       <workItem from="1632052329087" duration="14832000" />
       <workItem from="1632072361415" duration="11558000" />
       <workItem from="1632085660156" duration="9655000" />
-      <workItem from="1632095898011" duration="974000" />
+      <workItem from="1632095898011" duration="2298000" />
+      <workItem from="1632122217968" duration="1506000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
