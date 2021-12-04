@@ -31,7 +31,6 @@ public class StudentRepositoryImpl implements StudentRepository {
     //language=SQL
     private static final String SQL_SELECT_BY_NAME = "select * from student where lower(first_name) ~ lower(:firstOrLastName) or lower(last_name) ~ lower(:firstOrLastName);";
 
-
     private final NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     @Autowired
@@ -63,7 +62,9 @@ public class StudentRepositoryImpl implements StudentRepository {
         values.put("groupName", student.getGroupName());
         values.put("age", student.getAge());
         SqlParameterSource parameterSource = new MapSqlParameterSource(values);
+
         namedParameterJdbcTemplate.update(SQL_INSERT, parameterSource, keyHolder, new String[]{"id"});
+
         student.setId(keyHolder.getKeyAs(Integer.class));
     }
 

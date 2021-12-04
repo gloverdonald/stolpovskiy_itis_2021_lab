@@ -22,9 +22,9 @@ public class StudentDto {
 
     public static StudentDto from(Student student) {
         return StudentDto.builder()
+                .id(student.getId())
                 .firstName(student.getFirstName())
                 .lastName(student.getLastName())
-                .id(student.getId())
                 .age(student.getAge())
                 .groupName(student.getGroupName())
                 .build();

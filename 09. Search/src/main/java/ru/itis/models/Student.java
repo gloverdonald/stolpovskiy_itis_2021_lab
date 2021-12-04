@@ -15,5 +15,4 @@ public class Student {
     private String lastName;
     private String groupName;
     private Integer age;
-
 }

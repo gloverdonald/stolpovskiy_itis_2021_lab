@@ -1,11 +1,12 @@
 package ru.itis.services;
 
+import ru.itis.dto.StudentDto;
 import ru.itis.models.Student;
 
 import java.util.List;
 
 public interface StudentService {
-    List<Student> getStudents();
+    List<StudentDto> getStudents();
 
-    void saveStudent(Student student);
+    List<StudentDto> saveStudent(StudentDto student);
 }

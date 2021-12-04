@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.itis</groupId>
-    <artifactId>08-spring-mvc</artifactId>
+    <artifactId>09-search</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
