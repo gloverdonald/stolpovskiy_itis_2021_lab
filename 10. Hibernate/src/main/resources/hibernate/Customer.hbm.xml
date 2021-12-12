@@ -10,5 +10,13 @@
         <property name="firstName" column="first_name"/>
         <property name="lastName" column="last_name"/>
 
+
+        <bag name="orders">
+            <key>
+                <column name="customer_id"/>
+            </key>
+            <one-to-many class="ru.itis.education.models.Orders"/>
+        </bag>
+
     </class>
 </hibernate-mapping>

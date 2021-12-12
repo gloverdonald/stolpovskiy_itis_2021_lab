@@ -9,9 +9,11 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-
+@ToString(exclude = "orders")
 public class Customer {
     private Long id;
     private String firstName;
     private String lastName;
+    private List<Orders> orders;
 }
+
