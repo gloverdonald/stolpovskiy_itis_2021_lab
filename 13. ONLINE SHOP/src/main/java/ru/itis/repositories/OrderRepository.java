@@ -6,5 +6,5 @@ import ru.itis.models.Order;
 import java.util.List;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
-    List<Order> findAllByCustomer_Id(Long id);
+    List<Order> findAllByCustomerId(Long id);
 }

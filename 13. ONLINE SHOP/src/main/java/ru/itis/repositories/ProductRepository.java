@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
     @Query("select product from Product product join product.orders orders where orders.id = :orderId")
-    List<Product> getAllByOrderId(@Param("orderId") Long orderId);
+    List<Product> findAllByOrderId(@Param("orderId") Long orderId);
 
-    List<Product> getAllByTitleLike(String title);
+    List<Product> findAllByTitleLike(String title);
 }
