@@ -1,6 +1,5 @@
 Столповский Михаил Дмитриевич  
 [VK](https://vk.com/pel34)  
-<<<<<<< README.md
 [Ссылка на видео 9.1](https://youtu.be/oCfpkqg4-tw)  
 [Ссылка на второе видео 9.2](https://youtu.be/EgFol-R-JFw)  
 [Ссылка на видео 10](https://youtu.be/9oSlD9voCBU)  
