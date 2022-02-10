@@ -1,0 +1,257 @@
+POST http://localhost:8044/add/customer
+Content-Type: application/json
+
+{
+  "firstName": "Eddy",
+  "lastName": "Peete"
+}
+
+###
+POST http://localhost:8044/add/customer
+Content-Type: application/json
+
+{
+  "firstName": "Georgi",
+  "lastName": "Angerstein"
+}
+
+
+###
+POST http://localhost:8044/add/customer
+Content-Type: application/json
+
+{
+  "firstName": "Andrei",
+  "lastName": "Form"
+}
+
+
+
+
+###
+POST http://localhost:8044/add/customer/1/order
+Content-Type: application/json
+
+{
+  "title": "Order1"
+}
+
+###
+POST http://localhost:8044/add/customer/1/order
+Content-Type: application/json
+
+{
+  "title": "Order2"
+}
+
+###
+POST http://localhost:8044/add/customer/1/order
+Content-Type: application/json
+
+{
+  "title": "Order3"
+}
+
+
+###
+POST http://localhost:8044/add/customer/2/order
+Content-Type: application/json
+
+{
+  "title": "Order44"
+}
+
+###
+POST http://localhost:8044/add/customer/2/order
+Content-Type: application/json
+
+{
+  "title": "Order55"
+}
+
+###
+POST http://localhost:8044/add/customer/3/order
+Content-Type: application/json
+
+{
+  "title": "Order666"
+}
+
+
+
+###
+POST http://localhost:8044/add/product
+Content-Type: application/json
+
+{
+  "price": 64,
+  "title": "Pie Pecan"
+}
+
+
+
+
+###
+POST http://localhost:8044/add/product
+Content-Type: application/json
+
+{
+  "price": 128,
+  "title": "Filling - Mince Meat"
+}
+
+
+###
+POST http://localhost:8044/add/product
+Content-Type: application/json
+
+{
+  "price": 65,
+  "title": "Seedlings - Buckwheat, Organic"
+}
+
+
+###
+POST http://localhost:8044/add/product
+Content-Type: application/json
+
+{
+  "price": 79,
+  "title": "Peas - Pigeon, Dry"
+}
+
+
+###
+POST http://localhost:8044/add/product
+Content-Type: application/json
+
+{
+  "price": 125,
+  "title": "Cheese - Goat"
+}
+
+
+###
+POST http://localhost:8044/add/product
+Content-Type: application/json
+
+{
+  "price": 91,
+  "title": "Wine - Barbera Alba Doc 2001"
+}
+
+
+###
+POST http://localhost:8044/add/product
+Content-Type: application/json
+
+{
+  "price": 102,
+  "title": "Creme De Menthe Green"
+}
+
+
+###
+POST http://localhost:8044/add/product
+Content-Type: application/json
+
+{
+  "price": 66,
+  "title": "Cranberries - Dry"
+}
+
+
+
+
+
+###
+GET http://localhost:8044/customer?id=1
+
+###
+GET http://localhost:8044/customer?id=3
+
+
+
+###
+GET http://localhost:8044/order?id=1
+
+###
+GET http://localhost:8044/order?id=3
+
+
+###
+GET http://localhost:8044/product?id=1
+
+###
+GET http://localhost:8044/product?id=3
+
+
+
+
+###
+GET http://localhost:8044/products/order?id=1
+
+###
+GET http://localhost:8044/orders/customer?id=1
+
+
+
+
+
+
+
+
+###
+POST http://localhost:8044/update/customer
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "TEST1",
+  "lastName": "TEST"
+}
+
+
+###
+GET http://localhost:8044/products_by_title?title=Menthe
+
+
+
+
+###
+POST http://localhost:8044/add_product_to_order
+Content-Type: application/json
+
+{
+
+  "orderId": 1,
+  "productId": 5
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost:8044/add_product_to_order
+Content-Type: application/json
+
+{
+  "orderId": 6,
+  "productId": 4
+}
+
