@@ -31,5 +31,4 @@ public class Account {
 
     @Enumerated(value = EnumType.STRING)
     private State state;
-
 }

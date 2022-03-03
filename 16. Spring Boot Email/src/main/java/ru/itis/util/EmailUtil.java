@@ -10,10 +10,8 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.stereotype.Component;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
-import ru.itis.models.Account;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 
 @RequiredArgsConstructor
@@ -27,16 +25,14 @@ public class EmailUtil {
     @Autowired
     private Configuration freemarkerConfiguration;
 
-    public void sendMail(Account account) {
+    public void sendMail(String to, String subject, String templateName, Map<String, String> data) {
         try {
-            Map<String, Object> model = new HashMap<>();
-            model.put("account", account);
-            String str = FreeMarkerTemplateUtils.processTemplateIntoString(freemarkerConfiguration.getTemplate("/emails/confirm_mail.ftlh", "UTF-8"), model);
+            String str = FreeMarkerTemplateUtils.processTemplateIntoString(freemarkerConfiguration.getTemplate(templateName, "UTF-8"), data);
             MimeMessagePreparator preparator = mimeMessage -> {
                 MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage);
-                messageHelper.setSubject("subject");
+                messageHelper.setSubject(subject);
                 messageHelper.setText(str, true);
-                messageHelper.setTo(account.getEmail());
+                messageHelper.setTo(to);
                 messageHelper.setFrom(from);
             };
             mailSender.send(preparator);

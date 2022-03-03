@@ -7,8 +7,9 @@
             background-color: #3b3b3b;
             color: white;
         }
+
         .center {
-            font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */
+            font-family: 'Times New Roman', Times, serif;
             font-size: 250%;
             margin: auto;
             width: 50%;
@@ -20,8 +21,8 @@
 
 <body>
 <div class="center">
-    <#if account??>Уважаемый, ${account.firstName}! Пройдите для подтверждения регистрации по <a
-            href="http://localhost:8085/confirm/${account.confirmCode}">ссылке</a> <#else>
+    <#if firstName?? && confirmCode??>Уважаемый, ${firstName}! Пройдите для подтверждения регистрации по <a
+            href="http://localhost:8085/confirm/${confirmCode}">ссылке</a> <#else>
         error
     </#if>
 </div>

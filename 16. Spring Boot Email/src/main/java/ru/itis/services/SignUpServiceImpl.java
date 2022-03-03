@@ -8,8 +8,7 @@ import ru.itis.models.Account;
 import ru.itis.repositories.AccountsRepository;
 import ru.itis.util.EmailUtil;
 
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 @RequiredArgsConstructor
 @Service
@@ -31,7 +30,10 @@ public class SignUpServiceImpl implements SignUpService {
                 .password(accountForm.getPassword())
                 .build();
         accountsRepository.save(account);
-        emailUtil.sendMail(account);
+        Map<String, String> data = Map.of("confirmCode", account.getConfirmCode(),
+                "firstName", account.getFirstName(),
+                "lastName", account.getLastName());
+        emailUtil.sendMail(account.getEmail(), "Confirm Your Email ", "/emails/confirm_mail.ftlh", data);
     }
 
     @Override
