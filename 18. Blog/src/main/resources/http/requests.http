@@ -1,0 +1,52 @@
+### Получение списка авторов
+
+GET localhost:8888/authors?page=0
+
+### Добавление автора
+
+POST localhost:8888/authors
+Content-Type: application/json
+
+{
+  "firstName": "Марсель",
+  "lastName": "Сидиков"
+}
+
+### Обновление автора
+
+PUT localhost:8888/authors/77
+Content-Type: application/json
+
+{
+  "firstName" : "Александр",
+  "lastName": "Пушкин"
+}
+
+
+### Добавление поста автору
+
+POST localhost:8888/authors/1/posts
+Content-Type: application/json
+
+{
+  "title": "test1 a",
+  "text": "test1  b"
+}
+
+### Удаление поста автору
+DELETE localhost:8888/authors/posts/4
+
+
+### Получение постов автора
+GET localhost:8888/authors/3/posts?page=0&sort-param=createdAt
+
+
+### Обновление поста автора
+
+PUT localhost:8888/authors/posts/1
+Content-Type: application/json
+
+{
+  "title": "updatedTitle",
+  "text": "updatedText"
+}
